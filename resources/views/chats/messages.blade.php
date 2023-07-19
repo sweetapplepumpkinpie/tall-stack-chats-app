@@ -17,7 +17,7 @@
             </svg>
         </div>
         <div
-            class="block sm:hidden rounded-full dark:bg-blue-500 bg-blue-400 w-6 h-6 text-white text-center"
+            class="block sm:hidden rounded-full dark:bg-blue-500 bg-blue-400 w-6 h-6 dark:text-gray-100 text-white text-center"
         >
             1
         </div>
@@ -34,9 +34,9 @@
                 ></div>
             </div>
             <div class="overflow-hidden flex flex-col">
-                <span x-text="current.name"></span>
+                <span x-text="current.name" class="dark:text-gray-100"></span>
                 <span
-                    class="whitespace-nowrap text-ellipsis overflow-hidden"
+                    class="whitespace-nowrap text-ellipsis overflow-hidden dark:text-gray-100"
                     x-text="current.active ? 'Online' : 'Offline'"
                 ></span>
             </div>
@@ -97,12 +97,12 @@
         <div>
             <div
                 x-text="message.date"
-                class="text-center"
+                class="text-center dark:text-gray-100"
                 :class="message.date === $store.messages.items[index + 1]?.date ? 'hidden' : ''"
             ></div>
             <div
-                class="rounded-3xl cursor-pointer px-4 py-2 flex items-center max-w-[70%] w-fit"
-                :class="[(message.in ? 'dark:bg-blue-500 bg-blue-400 text-white' : 'ml-auto dark:bg-neutral-600 bg-gray-100'), (message.in === $store.messages.items[index - 1]?.in ? 'mb-1' : 'mb-3')]"
+                class="rounded-3xl dark:text-gray-100 cursor-pointer px-4 py-2 flex items-center max-w-[70%] w-fit"
+                :class="[(message.in ? 'dark:bg-blue-500 bg-blue-400 dark:text-gray-100 text-white' : 'ml-auto dark:bg-gray-600 bg-gray-100'), (message.in === $store.messages.items[index - 1]?.in ? 'mb-1' : 'mb-3')]"
             >
                 <div x-text="message.content"></div>
             </div>
@@ -113,7 +113,7 @@
     <div class="relative">
         <input
             placeholder="Ecrivez un message …"
-            class="w-full rounded-xl dark:bg-neutral-600 bg-gray-100 py-6 pl-14 pr-24 h-[2.375rem] border-none outline-0 focus:outline-none focus:ring-1 focus:ring-gray-100"
+            class="w-full rounded-xl dark:bg-gray-700 bg-gray-100 py-6 pl-14 pr-24 h-[2.375rem] border-none outline-0 focus:outline-none focus:ring-1 focus:ring-gray-100"
         />
         <div
             class="absolute left-2 flex items-center justify-center top-1/2 -translate-y-1/2 w-10 h-10"

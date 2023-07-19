@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="hidden">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,7 +29,7 @@
 
             <!-- Page Heading -->
             @if (isset($header))
-            <header class="dark:bg-neutral-800 bg-white shadow">
+            <header class="dark:bg-gray-800 bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     {{ $header }}
                 </div>
@@ -38,7 +38,7 @@
 
             <!-- Page Content -->
             <main
-                class="flex-auto flex overflow-hidden dark:text-white dark:bg-neutral-700"
+                class="flex-auto flex overflow-hidden"
             >
                 {{ $slot }}
             </main>

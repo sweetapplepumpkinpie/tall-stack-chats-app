@@ -32,7 +32,7 @@
     <div class="relative">
         <input
             placeholder="Rechercher un message, un utilisateur…"
-            class="w-full rounded-xl dark:bg-neutral-600 bg-gray-100 py-6 pl-6 pr-12 h-[2.375rem] border-none outline-0 focus:outline-none focus:ring-1 dark:focus:ring-gray-500 focus:ring-gray-100 dark:focus:border-gray-500 focus:border-gray-100 dark:focus:bg-neutral-800 focus:bg-white"
+            class="w-full rounded-xl dark:bg-gray-700 bg-gray-100 py-6 pl-6 pr-12 h-[2.375rem] border-none outline-0 focus:outline-none focus:ring-1 dark:focus:ring-gray-500 focus:ring-gray-100 dark:focus:border-gray-500 focus:border-gray-100 dark:focus:bg-neutral-800 focus:bg-white"
         />
         <button
             type="submit"
@@ -70,9 +70,9 @@
                     ></div>
                 </div>
                 <div class="overflow-hidden flex flex-col">
-                    <span x-text="user.name"></span>
+                    <span x-text="user.name" class="dark:text-gray-100"></span>
                     <span
-                        class="whitespace-nowrap text-ellipsis overflow-hidden"
+                        class="dark:text-gray-100 whitespace-nowrap text-ellipsis overflow-hidden"
                         x-text="user.lastMessage"
                     ></span>
                 </div>
