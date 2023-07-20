@@ -21,10 +21,12 @@
         @livewireStyles
     </head>
 
-    <body class="font-sans antialiased min-h-screen">
+    <body class="font-sans antialiased">
         <x-banner />
 
-        <div class="chat-container flex flex-col overflow-hidden">
+        <div
+            class="chat-container flex flex-col overflow-hiddens pb-16 sm:pb-0"
+        >
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
@@ -40,8 +42,8 @@
             <main class="flex-auto flex overflow-hidden">
                 {{ $slot }}
             </main>
-            <x-bottom-nav></x-bottom-nav>
         </div>
+        <x-bottom-nav></x-bottom-nav>
 
         @stack('modals') @livewireScripts
     </body>
