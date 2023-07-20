@@ -1,5 +1,5 @@
 <footer
-    class="fixed w-full bottom-0 sm:hidden flex justify-between bg-purple-500 px-5 py-2 text-white text-sm"
+    class="sticky w-full bottom-0 sm:hidden flex justify-between bg-purple-500 px-5 py-2 text-white text-sm"
 >
     <div class="flex flex-col items-center justify-center">
         <div class="h-8 w-8 flex justify-center">

@@ -14,7 +14,9 @@ session('flash.banner')])
                 });
                 const appHeight = () => {
                     const doc = document.querySelector('#chat-container')
-                    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+                    if (doc) {
+                        doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+                    }
                 }
                 window.addEventListener('resize', appHeight)
                 window.onload = appHeight
