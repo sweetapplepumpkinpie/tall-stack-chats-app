@@ -13,11 +13,11 @@ session('flash.banner')])
                     show = true;
                 });
                 const appHeight = () => {
-                    const doc = document.documentElement
-                    doc.style.setProperty('-—app-height', `${window.innerHeight}px`)
+                    const doc = document.querySelector('#chat-container')
+                    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
                 }
                 window.addEventListener('resize', appHeight)
-                appHeight()
+                window.onload = appHeight
             "
 >
     <div class="max-w-screen-xl mx-auto py-2 px-3 sm:px-6 lg:px-8">

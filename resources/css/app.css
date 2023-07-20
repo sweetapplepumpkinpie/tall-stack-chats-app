@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --app-height: 100vh;
-}
-
 [x-cloak] {
     display: none;
-}
-
-.chat-container {
-    height: var(--app-height);
 }

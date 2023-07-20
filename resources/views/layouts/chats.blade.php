@@ -25,7 +25,9 @@
         <x-banner />
 
         <div
-            class="chat-container flex flex-col overflow-hiddens pb-16 sm:pb-0"
+            id="chat-container"
+            class="flex flex-col overflow-hiddens pb-16 sm:pb-0"
+            style="--app-height: 100vh; height: var(--app-height)"
         >
             @livewire('navigation-menu')
 
