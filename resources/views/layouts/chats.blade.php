@@ -26,7 +26,7 @@
 
         <div
             id="chat-container"
-            class="flex flex-col overflow-hiddens pb-16 sm:pb-0"
+            class="flex flex-col overflow-hiddens"
             style="--app-height: 100vh; height: var(--app-height)"
         >
             @livewire('navigation-menu')
@@ -44,8 +44,8 @@
             <main class="flex-auto flex overflow-hidden">
                 {{ $slot }}
             </main>
+            <x-bottom-nav></x-bottom-nav>
         </div>
-        <x-bottom-nav></x-bottom-nav>
 
         @stack('modals') @livewireScripts
     </body>
