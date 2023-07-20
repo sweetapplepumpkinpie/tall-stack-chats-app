@@ -24,7 +24,7 @@
     <body class="font-sans antialiased min-h-screen">
         <x-banner />
 
-        <div class="min-h-screen max-h-screen flex flex-col overflow-hidden">
+        <div class="chat-container flex flex-col overflow-hidden">
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
@@ -37,9 +37,7 @@
             @endif
 
             <!-- Page Content -->
-            <main
-                class="flex-auto flex overflow-hidden"
-            >
+            <main class="flex-auto flex overflow-hidden">
                 {{ $slot }}
             </main>
             <x-bottom-nav></x-bottom-nav>
